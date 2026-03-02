@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import CommonHeader from "../Components/ayush/CommonHeader";
+import CommonHeader from "../components/ayush/CommonHeader";
 
 
 export default function OTPVerification() {

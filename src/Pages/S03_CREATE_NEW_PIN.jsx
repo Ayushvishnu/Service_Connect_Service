@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowLeft, Eye, EyeOff, Lock, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import CommonHeader from "../Components/ayush/CommonHeader";
+import CommonHeader from "../components/ayush/CommonHeader";
 
 
 export default function CreateNewPassword() {
