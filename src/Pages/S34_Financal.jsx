@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../Components/adhil/Header'
-import AccountDetails from '../Components/adhil/AccountDetails'
-import ToolBar from '../Components/adhil/ToolBar'
-import TransactionList from '../Components/adhil/TransactionList'
+import Header from '../components/adhil/Header'
+import AccountDetails from '../components/adhil/AccountDetails'
+import ToolBar from '../components/adhil/ToolBar'
+import TransactionList from '../components/adhil/TransactionList'
 
 export default function S34_Financal() {
 

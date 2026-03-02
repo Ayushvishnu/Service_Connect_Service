@@ -1,6 +1,6 @@
 import React from 'react'
-import RequestDetails from '../Components/adhil/RequestDetails'
-import Header from '../Components/adhil/Header'
+import RequestDetails from '../components/adhil/RequestDetails'
+import Header from '../components/adhil/Header'
 
 export default function S23_RequestService() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../Components/adhil/Header'
-import LeadAlertModal from '../Components/adhil/LeadAlertModal'
+import Header from '../components/adhil/Header'
+import LeadAlertModal from '../components/adhil/LeadAlertModal'
 
 export default function Page78() {
   return (

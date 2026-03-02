@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Components/adhil/Header'
-import RequestDetails from '../Components/adhil/RequestDetails'
-import InvoiceForm from '../Components/adhil/InvoiceForm'
+import Header from '../components/adhil/Header'
+import RequestDetails from '../components/adhil/RequestDetails'
+import InvoiceForm from '../components/adhil/InvoiceForm'
 
 export default function S24_AcceptandInvoice() {
   return (

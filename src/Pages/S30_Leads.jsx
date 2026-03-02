@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../Components/adhil/Header'
-import LeadsRequestList from '../Components/adhil/LeadsRequestList'
+import Header from '../components/adhil/Header'
+import LeadsRequestList from '../components/adhil/LeadsRequestList'
 
 export default function S30_Leads() {
   return (

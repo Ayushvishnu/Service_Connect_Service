@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Components/adhil/Header'
-import RequestInfo from '../Components/adhil/RequestInfo'
-import ServiceDeclineForm from '../Components/adhil/ServiceDeclineForm'
+import Header from '../components/adhil/Header'
+import RequestInfo from '../components/adhil/RequestInfo'
+import ServiceDeclineForm from '../components/adhil/ServiceDeclineForm'
 
 export default function S29_Form() {
   return (

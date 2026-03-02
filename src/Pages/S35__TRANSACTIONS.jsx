@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from '../Components/adhil/Header'
-import ToolBar from '../Components/adhil/ToolBar'
-import TransactionItem from '../Components/adhil/TransactionItem'
-import TransactionList from '../Components/adhil/TransactionList'
-import TransactionLists from '../Components/adhil/TransactionLists'
+import Header from '../components/adhil/Header'
+import ToolBar from '../components/adhil/ToolBar'
+import TransactionItem from '../components/adhil/TransactionItem'
+import TransactionList from '../components/adhil/TransactionList'
+import TransactionLists from '../components/adhil/TransactionLists'
 
 export default function S35__TRANSACTIONS() {
   return (

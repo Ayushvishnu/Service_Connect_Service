@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Components/adhil/Header'
-import AccountDetails from '../Components/adhil/AccountDetails'
-import EditServiceForm from '../Components/adhil/EditServiceForm '
+import Header from '../components/adhil/Header'
+import AccountDetails from '../components/adhil/AccountDetails'
+import EditServiceForm from '../components/adhil/EditServiceForm '
 
 export default function S21_EditService() {
   return (

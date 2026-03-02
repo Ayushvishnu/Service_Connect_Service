@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ServiceLeadDetails from "../Components/adhil/ServiceLeadDetails";
-import Header from "../Components/adhil/Header";
+import ServiceLeadDetails from "../components/adhil/ServiceLeadDetails";
+import Header from "../components/adhil/Header";
 
 export default function S31_ServiceLeadDetails() {
   const { id } = useParams(); // 👈 REAL PRODUCT LOGIC

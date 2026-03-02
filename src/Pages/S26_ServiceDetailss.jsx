@@ -1,7 +1,7 @@
 import React from 'react'
-import AppoinmentDetails from '../Components/adhil/AppoinmentDetails'
-import RequestDetails from '../Components/adhil/RequestDetails'
-import Header from '../Components/adhil/Header'
+import AppoinmentDetails from '../components/adhil/AppoinmentDetails'
+import RequestDetails from '../components/adhil/RequestDetails'
+import Header from '../components/adhil/Header'
 
 export default function S26_ServiceDetailss() {
   return (

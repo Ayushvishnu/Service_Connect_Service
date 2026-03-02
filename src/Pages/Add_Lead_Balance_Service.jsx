@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../Components/adhil/Header'
-import AddLeadBalance from '../Components/adhil/AddLeadBalance'
+import Header from '../components/adhil/Header'
+import AddLeadBalance from '../components/adhil/AddLeadBalance'
 
 export default function Add_Lead_Balance_Sevice() {
   return (
