@@ -15,20 +15,8 @@ export default function Profile() {
   }, []);
 
   const allowLocation = () => {
-    if (!navigator.geolocation) {
-      alert("Geolocation not supported");
-      return;
-    }
-
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        console.log(pos.coords.latitude, pos.coords.longitude);
-        setShowLocationAlert(false);
-      },
-      () => {
-        alert("Location permission denied");
-      }
-    );
+   
+    setShowLocationAlert(false)
   };
 
   return (
