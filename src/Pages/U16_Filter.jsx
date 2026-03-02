@@ -1,6 +1,6 @@
 import React from 'react'
 import AppHeader from '../components/reshma/AppHeader'
-import Filtercategory from '../components/reshma/Filtercategory'
+import Filtercategory from '../components/reshma/FilterCategory'
 const Page16 = () => {
   return (
     <div className=''>
