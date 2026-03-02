@@ -5,14 +5,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 // import StartPage from "./components/ayush/Pages/S01_LAUNCHING"
 import StartPage from "./Pages/S01_LAUNCHING.jsx"
 import Login from "./Pages/S02_LOGIN.jsx"
-import CreateNewPassword from "./Pages/S03_CREATE_NEW_PIN";
-import OTPVerification from "./Pages/S04_OTP";
-import SuccessRedirect from "./Pages/S08_CONGRATULATIONS";
-import Profile from "./Pages/S06_FILL_YOUR_PROFILE";
+import CreateNewPassword from "./Pages/S03_CREATE_NEW_PIN.jsx";
+import OTPVerification from "./Pages/S04_OTP.jsx";
+import SuccessRedirect from "./Pages/S08_CONGRATULATIONS.jsx";
+import Profile from "./Pages/S06_FILL_YOUR_PROFILE.jsx";
 
-import ForgotPassword from "./Pages/S09_FORGOT PASSWORD";
-import ForgotOtpVerification  from "./Pages/S10_VERIFY_FORGOT_PASSWORD";
-import ConfirmPassword from "./Pages/S11_CREATE_NEW_PASSWORD"
+import ForgotPassword from "./Pages/S09_FORGOT PASSWORD.jsx";
+import ForgotOtpVerification  from "./Pages/S10_VERIFY_FORGOT_PASSWORD.jsx";
+import ConfirmPassword from "./Pages/S11_CREATE_NEW_PASSWORD.jsx"
 import ForgotSuccessRedirect from "./Pages/Page61.jsx";
 
 
@@ -31,18 +31,18 @@ import S27_ActiveServices from "./Pages/S27_ActiveServices.jsx";
 import Page14 from "./Pages/U14_Search.jsx"
 
 //yaswanth
-import PageS41 from './Pages/PageS41'
-import PageS42 from './Pages/PageS42'
-import PageS43 from './Pages/PageS43'
-import PageS44 from './Pages/PageS44'
-import PageS45 from './Pages/PageS45'
-import PageS46 from './Pages/PageS46'
-import PageS47 from './Pages/PageS47'
-import PageS48 from './Pages/PageS48'
-import PageS49 from './Pages/PageS49'
-import PageS51 from './Pages/PageS51'
-import Page145 from './Pages/Page145'
-import Page146 from './Pages/Page146'
+import PageS41 from './Pages/PageS41.jsx'
+import PageS42 from './Pages/PageS42.jsx'
+import PageS43 from './Pages/PageS43.jsx'
+import PageS44 from './Pages/PageS44.jsx'
+import PageS45 from './Pages/PageS45.jsx'
+import PageS46 from './Pages/PageS46.jsx'
+import PageS47 from './Pages/PageS47.jsx'
+import PageS48 from './Pages/PageS48.jsx'
+import PageS49 from './Pages/PageS49.jsx'
+import PageS51 from './Pages/PageS51.jsx'
+import Page145 from './Pages/Page145.jsx'
+import Page146 from './Pages/Page146.jsx'
 
 // import PageS52 from './Pages/PageS52'
 // import PageS22 from './Pages/PageS22'
@@ -51,24 +51,24 @@ import Page146 from './Pages/Page146'
 // import PageS28 from './Pages/PageS28'
 
 // import PageS34 from './Pages/PageS34'
-import PageS38 from './Pages/PageS38'
-import PageS39 from './Pages/PageS39'
-import PageS37 from './Pages/PageS37'
-import Missing147 from './Pages/Missing147'
-import Missing148 from './Pages/Missing148'
-import Missing149 from './Pages/Missing149'
-import Missing150 from './Pages/Missing150'
-import Missing151 from './Pages/MIssing151'
-import Missing152_logout from './Pages/Missing152_logout'
-import Missing153 from './Pages/Missing153'
-import Missing154 from './Pages/Missing154'
-import Home from './Pages/Home'
+import PageS38 from './Pages/PageS38.jsx'
+import PageS39 from './Pages/PageS39.jsx'
+import PageS37 from './Pages/PageS37.jsx'
+import Missing147 from './Pages/Missing147.jsx'
+import Missing148 from './Pages/Missing148.jsx'
+import Missing149 from './Pages/Missing149.jsx'
+import Missing150 from './Pages/Missing150.jsx'
+import Missing151 from './Pages/MIssing151.jsx'
+import Missing152_logout from './Pages/Missing152_logout.jsx'
+import Missing153 from './Pages/Missing153.jsx'
+import Missing154 from './Pages/Missing154.jsx'
+import Home from './Pages/Home.jsx'
 
 
  {/* new changes  */}
 
-import ServiceList from "./components/yaswanth/ServiceList";
-import JobLists from "./components/yaswanth/JobLists";
+import ServiceList from "./components/yaswanth/ServiceList.jsx";
+import JobLists from "./components/yaswanth/JobLists.jsx";
 
 
 
@@ -92,23 +92,23 @@ import S36_COMPLAINTS from "./Pages/S36_COMPLAINTS.jsx";
 
 
 //Arjun 
-import S52Security from "./Pages/S52_SECURITY";
-import S53InboxChats from "./Pages/S53_INDOX_CHATS";
-import S54InboxChatsMessages from "./Pages/S54_INDOX_CHATS_MESSAGES";
-import S404ErrorPage from "./Pages/S404_Error_Page";
-import S403AccessDenied from "./Pages/S403_Access_Denied";
+import S52Security from "./Pages/S52_SECURITY.jsx";
+import S53InboxChats from "./Pages/S53_INDOX_CHATS.jsx";
+import S54InboxChatsMessages from "./Pages/S54_INDOX_CHATS_MESSAGES.jsx";
+import S404ErrorPage from "./Pages/S404_Error_Page.jsx";
+import S403AccessDenied from "./Pages/S403_Access_Denied.jsx";
 
-import SResetPassword from "./Pages/SRESET_PASSWORD";
-import SVerifyResetPassword from "./Pages/SVERIFY_RESET_PASSWORD";
-import SResetNewPassword from "./Pages/SRESET_NEW_PASSWORD";
-import SResetCongratulations from "./Pages/SRESET_CONGRATULATIONS";
+import SResetPassword from "./Pages/SRESET_PASSWORD.jsx";
+import SVerifyResetPassword from "./Pages/SVERIFY_RESET_PASSWORD.jsx";
+import SResetNewPassword from "./Pages/SRESET_NEW_PASSWORD.jsx";
+import SResetCongratulations from "./Pages/SRESET_CONGRATULATIONS.jsx";
 import Page63 from "./Pages/S15_PaymentMethods.jsx";
 import Ereciept from "./components/reshma/Ereciept.jsx";
 import Page16 from "./Pages/U16_Filter.jsx";
 import SuccessMessage from "./components/reshma/SuccessMessage.jsx";
 import Page11 from "./Pages/Frame10000826.jsx";
 import RegisterService from "./Pages/S07_REGISTER_SERVICE.jsx";
-import PageU28 from "./Pages/Missing149";
+import PageU28 from "./Pages/Missing149.jsx";
 
 
 function App() {
