@@ -22,7 +22,7 @@ import AccountSuccess from "./Pages/S12_Congradulations.jsx"
 import Page62 from "./Pages/S13_PaymentMethods.jsx"
 import S17_E_RECIEPT_EDIT from "./Pages/S17_E_RECIEPT_EDIT.jsx";
 import S14_AddNewCard from "./Pages/S14_AddNewCard.jsx";
-import S18_CheckoutSuccess from "./Pages/S18_CheckoutSuccess.jsx";
+import S18_CheckoutSuccess from "./Pages/S18_CheckOutSuccess.jsx";
 import S19_Dashboard from "./Pages/S19_Dashboard.jsx";
 import S20_MyServices from "./Pages/S20_MyServices.jsx";
 import S22_Requests from "./Pages/S22_Requests.jsx";
