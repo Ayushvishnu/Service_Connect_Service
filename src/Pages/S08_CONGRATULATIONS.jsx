@@ -7,7 +7,7 @@ export default function SuccessRedirect() {
   useEffect(() => {
     const timer = setTimeout(() => {
       // redirect logic
-      window.location.href = "/";
+      window.location.href = "/home";
     }, 3000);
 
     return () => clearTimeout(timer);

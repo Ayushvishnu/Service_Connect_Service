@@ -6,7 +6,7 @@ export default function AccountSuccess() {
 const navigate = useNavigate();
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/page62");
+      navigate("/home");
       setOpen(false);
     }, 3000);
 
