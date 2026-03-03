@@ -97,7 +97,7 @@ const UserProfileMenuBar_47 = ({ show, setShow }) => {
         {/* Logout */}
         <div className="pt-4 mt-4 border-t border-white/10 flex justify-center">
           <button
-            onClick={() => navigate("/page11")}
+            onClick={() => navigate("/missing152_logout")}
             className="flex items-center gap-2 text-gray-300 hover:text-white"
           >
             Logout <LogOut size={18} />
