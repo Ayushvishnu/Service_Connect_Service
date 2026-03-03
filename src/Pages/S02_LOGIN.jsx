@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Eye, EyeOff, Mail, Lock, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/Service_Connect_Logo.png";
-
 
 export default function Login() {
 
@@ -21,9 +19,7 @@ export default function Login() {
             👆
           </div> */}
 
-            {/* <img src="src/assets/Service_Connect_Logo.png" className="w-76 h-18"/> */}
-
-            <img src={logo} className="w-76 h-18" />
+            <img src="src/assets/Service_Connect_Logo.png" className="w-76 h-18"/>
 
           {/* <h1 className="text-xl font-semibold text-gray-900">Service Connect</h1> */}
 
