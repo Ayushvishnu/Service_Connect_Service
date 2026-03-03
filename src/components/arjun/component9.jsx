@@ -6,7 +6,7 @@ const Comp9 = ({
   image, 
   title = "Congratulations 🎉", 
   message = "Your account is ready to use. You’ll be redirected to the Home page in a few seconds.",
-  redirectTo = "/", 
+  redirectTo = "/home", 
   delay = 3000 
 }) => {
   const navigate = useNavigate();

@@ -1,70 +1,62 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Component4 from '../components/arjun/comp4';
 import Component8 from '../components/arjun/Component8';
+import { BsEnvelope } from "react-icons/bs";
 
 function SResetPassword() {
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
   const [error, setError] = useState('');
+  
+  const navigate = useNavigate();
 
+  // Validation Regex for Gmail
   const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-  const phoneRegex = /^\+?[1-9]\d{6,14}$/;
 
-  const handleValidation = () => {
-    // Check if both are empty
-    if (!email && !phone) {
-      setError("Please enter either an email or a phone number.");
-      return false;
+  const handleProcessSubmit = () => {
+    // 1. Validation Logic
+    if (!email) {
+      setError("Please enter your email address.");
+      return;
     }
 
-    // Validate email if entered
-    if (email && !gmailRegex.test(email)) {
+    if (!gmailRegex.test(email)) {
       setError("Please enter a valid Gmail address.");
-      return false;
-    }
-
-    // Validate phone if entered
-    if (phone && !phoneRegex.test(phone)) {
-      setError("Please enter a valid phone number (e.g., +1234567890).");
-      return false;
+      return;
     }
     
+    // 2. Clear errors if successful
     setError('');
-    return true;
+
+    // 3. Navigation
+    console.log("Email is valid, navigating...");
+    navigate("/SVERIFY_RESET_PASSWORD"); 
   };
 
   return (
     <div className='w-full min-h-screen bg-[#D9D9D9] flex flex-col overflow-x-hidden'>
+      {/* Header */}
       <div className="w-full">
         <Component4 title={"RESET PASSWORD"} theme='black'/>
       </div>
       
-      <div className="flex-1 flex flex-col items-center justify-center p-4 sm:p-8 2xl:p-16">
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col items-center justify-center p-4 sm:p-8">
         <div className="w-full max-w-[550px] transition-all duration-300">
           <Component8 
-            description="Enter your registered email or phone number to receive a OTP to reset your password"
-            navigatePath="/SVERIFY_RESET_PASSWORD"
-            
+            titleText="RESET PASSWORD"
+            description="Enter your registered email to receive an OTP to reset your password"
+            errorMessage={error}
+            onSubmit={handleProcessSubmit} 
             inputs={[
               { 
                 type: "email",
                 placeholder: "Email",
                 value: email,
-                onChange: (e) => setEmail(e.target.value),
-                isSelection: false // --- FIX: Explicitly set false ---
-              },
-              { 
-                type: "tel",
-                placeholder: "Phone Number",
-                value: phone,
-                onChange: (e) => setPhone(e.target.value),
-                isSelection: false // --- FIX: Explicitly set false ---
+                icon: <BsEnvelope size={20} />, 
+                onChange: (e) => setEmail(e.target.value)
               }
             ]}
-            
-            // --- FIX: Use onValidate to match Component8 props ---
-            onValidate={handleValidation}
-            errorMessage={error}
           />
         </div>
       </div>

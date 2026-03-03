@@ -95,6 +95,8 @@ import S36_COMPLAINTS from "./Pages/S36_COMPLAINTS.jsx";
 //Arjun 
 import S52Security from "./Pages/S52_SECURITY.jsx";
 import S53InboxChats from "./Pages/S53_INDOX_CHATS.jsx";
+// import S53_INDOX_CHATS from "./Pages/S53_INDOX_CHATS";
+
 import S54InboxChatsMessages from "./Pages/S54_INDOX_CHATS_MESSAGES.jsx";
 import S404ErrorPage from "./Pages/S404_Error_Page.jsx";
 import S403AccessDenied from "./Pages/S403_Access_Denied.jsx";
@@ -223,6 +225,7 @@ function App() {
         {/* AUTH & PUBLIC PAGES */}
                <Route path="/S52_SECURITY" element={<S52Security />} />
                <Route path="/S53_INDOX_CHATS" element={<S53InboxChats />} />
+               {/* <Route path="/S53_INDOX_CHATS" element={<S53_INDOX_CHATS />} /> */}
                <Route path="/S54_INDOX_CHATS_MESSAGES/:chatId" element={<S54InboxChatsMessages/>} />
                
                {/* Error pages*/}

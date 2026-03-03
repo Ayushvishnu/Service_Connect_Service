@@ -1,31 +1,46 @@
-import React, { useState } from 'react'; // 1. Import useState
-import Component8 from '../components/arjun/Component8';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Component4 from '../components/arjun/comp4';
+import Component8 from '../components/arjun/Component8';
+import { CiLock } from "react-icons/ci";
+import { Eye, EyeOff } from "lucide-react"; 
 
 const SRESET_NEW_PASSWORD = () => {
-  // 2. State to hold password values and error message
+  const navigate = useNavigate();
+  
+  // Input States
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
-  // 3. Validation logic to compare passwords
-  const validatePasswords = () => {
-    if (password.length < 6) {
-      setError("Password must be at least 6 characters long.");
-      return false;
+  // Visibility States
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
+
+  const handleUpdatePassword = () => {
+    // Basic Validation
+    if (!password || !confirmPassword) {
+      setError("Please fill in both fields.");
+      return;
+    }
+    if (password.length < 8) {
+      setError("Password must be at least 8 characters long.");
+      return;
     }
     if (password !== confirmPassword) {
       setError("Passwords do not match.");
-      return false;
+      return;
     }
-    setError(''); // Clear error if valid
-    return true;
+
+    // Success
+    setError('');
+    console.log("Password reset successful");
+    navigate("/SRESET_CONGRATULATIONS");
   };
 
   return (
     <div className='bg-[#D9D9D9] min-h-screen flex flex-col w-full overflow-x-hidden'>
-      
-      {/* 1. Header Section */}
+      {/* Header */}
       <div className="w-full">
         <Component4 theme='black' title="RESET PASSWORD"/>
       </div>
@@ -33,32 +48,54 @@ const SRESET_NEW_PASSWORD = () => {
       <div className='flex-1 flex flex-col items-center justify-center p-4 sm:p-8 2xl:p-16'>
         <div className='w-full max-w-[550px] transition-all duration-300'>
           <Component8
-            heading="Create Your New Password"
-            buttonText="Update Password"
-            // 4. Pass inputs with state tracking
+            titleText="Create Your New Password"
+            description="Your new password must be different from previous used passwords."
+            errorMessage={error}
+            onSubmit={handleUpdatePassword}
             inputs={[
               { 
-                type: "password", 
+                type: showPassword ? "text" : "password", 
                 placeholder: "Password",
                 value: password,
+                icon: <CiLock size={20} />, 
+                rightIcon: (
+                  <button 
+                    type="button" 
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="focus:outline-none"
+                  >
+                    {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                  </button>
+                ),
                 onChange: (e) => setPassword(e.target.value) 
               },
               { 
-                type: "password", 
+                type: showConfirm ? "text" : "password", 
                 placeholder: "Confirm Password",
                 value: confirmPassword,
+                icon: <CiLock size={20} />, 
+                rightIcon: (
+                  <button 
+                    type="button" 
+                    onClick={() => setShowConfirm(!showConfirm)}
+                    className="focus:outline-none"
+                  >
+                    {showConfirm ? <EyeOff size={18} /> : <Eye size={18} />}
+                  </button>
+                ),
                 onChange: (e) => setConfirmPassword(e.target.value)
               }
             ]}
-            // 5. Pass validation handler and error message
-            onValidate={validatePasswords}
-            errorMessage={error}
-            navigatePath="/SRESET_CONGRATULATIONS"
           />
         </div>
+
+        {/* Optional Hint */}
+        <p className="text-gray-500 text-xs mt-6 text-center max-w-xs">
+          Minimum 8 characters with a mix of letters, numbers, and symbols.
+        </p>
       </div>
     </div>
-  )
+  );
 }
 
 export default SRESET_NEW_PASSWORD;

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import person from "../../assets/person.jpg"
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
@@ -29,6 +30,10 @@ export default function FadeSlider() {
 
     return () => clearInterval(timer);
   }, []);
+
+
+const navigate = useNavigate();   
+
 
   return (
     <>
@@ -72,7 +77,17 @@ export default function FadeSlider() {
          <img className="w-10 h-10 p-1 rounded-full relative ml-5" src={person} alt="Bordered avatar"/>
          <h1 className="text-gray-600 ml-5">Tom Jose</h1>
          </div>
-         <button type="button" className="text-white bg-gray-900 mr-7  focus:ring-4 focus:ring-neutral-tertiary  leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none">Chat/Contact</button>
+         {/* <button type="button" className="text-white bg-gray-900 mr-7  focus:ring-4 focus:ring-neutral-tertiary  leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none">Chat/Contact</button> */}
+
+<button
+  type="button"
+  onClick={() => navigate("/S53_INDOX_CHATS")}
+  className="text-white bg-gray-900 mr-7 focus:ring-4 focus:ring-neutral-tertiary leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none"
+>
+  Chat/Contact
+</button>
+
+
     </div>
     <div className="bg-white p-3 rounded-xl mt-4">
         <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vero deserunt, ipsa nemo aspernatur, mollitia ea optio assumenda nisi fugiat eius doloribus hic dicta quidem error iste inventore dolorum maxime!
