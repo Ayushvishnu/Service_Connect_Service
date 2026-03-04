@@ -8,6 +8,8 @@ import {
   MoreVertical,
 } from "lucide-react"
 
+import person from "../../assets/person.jpg"
+import { Link } from "react-router-dom";
 
 export default function Component4({
   title,
@@ -17,6 +19,7 @@ export default function Component4({
   showFilter = false,
   showMenu = false,
   onMenuClick,
+  showIcon = false,
   theme = "white", //"black" or "white"
 }) {
   const isDark = theme === "black";
@@ -68,6 +71,7 @@ export default function Component4({
           </button>
         )}
       </div>
+      {showIcon && <Link to="/s43"><img src={person} className="w-10 h-10 rounded-full"/></Link>}
     </header>
     
   );

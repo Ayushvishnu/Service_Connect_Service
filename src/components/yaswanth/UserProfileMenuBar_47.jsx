@@ -23,36 +23,41 @@ const UserProfileMenuBar_47 = ({ show, setShow }) => {
   const location = useLocation();
 
   // ESC key close
-  useEffect(() => {
-    const handleEsc = (e) => e.key === "Escape" && setShow(false);
-    if (show) window.addEventListener("keydown", handleEsc);
-    return () => window.removeEventListener("keydown", handleEsc);
-  }, [show, setShow]);
+  // useEffect(() => {
+  //   const handleEsc = (e) => e.key === "Escape" && setShow(false);
+  //   if (show) window.addEventListener("keydown", handleEsc);
+  //   return () => window.removeEventListener("keydown", handleEsc);
+  // }, [show, setShow]);
 
-  if (!show) return null;
+  // if (!show) return null;
 
   return (
     <>
       {/* Overlay */}
-      <div
+      {/* <div
         onClick={() => setShow(false)}
         className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
-      />
+      /> */}
 
       {/* Drawer */}
-      <div className="fixed top-0 right-0 z-50 w-[90vw] max-w-[500px] h-full
+      <div className=" top-0 right-0 z-50  h-full
                       bg-[#1e2028]/90 backdrop-blur-xl shadow-2xl
                       p-6 text-white flex flex-col animate-slideIn">
 
+
+
+
+
+
         {/* Close */}
-        <button
+        {/* <button
           onClick={() => setShow(false)}
           className="absolute top-4 right-4 w-8 h-8 rounded-full
                      bg-white/10 hover:bg-white/20
                      flex items-center justify-center"
         >
           ✕
-        </button>
+        </button> */}
 
         {/* Profile */}
         <div className="flex items-center gap-3 mb-6 mt-6">

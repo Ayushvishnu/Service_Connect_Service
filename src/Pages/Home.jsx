@@ -59,6 +59,8 @@ const Home = () => {
   showprofil={true}
   showBack={false}
   showMenubar={true}
+  showIcon = {true}
+
 />
 
        </div>
@@ -105,3 +107,6 @@ const Home = () => {
 }
 
 export default Home
+
+
+

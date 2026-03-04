@@ -197,7 +197,7 @@ export default function Reviews({onBack}) {
 
         {/* Write Review Button */}
         <div className=" w-[90%] sm:w-[80%] md:w-[60%] mx-auto px-2 py-2 mb-2 space-y-3">
-          <Link to="/page25">
+          <Link to="/home">
             <button className="w-full bg-gray-900 text-white font-medium py-3 rounded-full hover:bg-gray-700 transition-all text-sm md:text-base">
               Write a Review
             </button>

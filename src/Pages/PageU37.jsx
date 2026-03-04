@@ -9,7 +9,7 @@ export default function PageU37() {
       
       {/* Header */}
      
-<div className="flex justify-end">
+{/* <div className="flex justify-end">
         <button
           onClick={() => setShowProfile(true)}
           className="px-3 py-1.5 rounded-md  bg-black/50 text-white text-sm
@@ -17,7 +17,7 @@ export default function PageU37() {
         >
           Open Profile
         </button>
-        </div>
+        </div> */}
      
      
 
