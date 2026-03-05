@@ -37,20 +37,21 @@ export default function Component4({
       className={`flex items-center justify-between px-3 py-3 md:p-4 lg:p-4 ${bgColor} ${textColor} transition-all`}
     >
       {/* Left Section */}
-      <div className="flex items-center gap-2">
+      {/* <div className="flex items-center gap-2">
         {showBack && (
           <button className={`p-1 rounded-full ${hoverColor}`}>
             <BackIcon size={24} />
           </button>
         )}
         <div className="text-md md:text-lg lg:text-lg font-semibold uppercase">{title}</div>
-      </div>
+      </div> */}
 
 
 
 
-{/* <div className="flex items-center">
+<div className="flex items-center">
         <Link to="/s45"><EllipsisVertical className="lg:hidden"/></Link>
+         {/* Left Section */}
          <div className="flex items-center gap-2">
         {showBack && (
           <button className={`p-1 rounded-full ${hoverColor}`}>
@@ -59,7 +60,7 @@ export default function Component4({
         )}
         <div className="text-md md:text-lg lg:text-lg font-semibold uppercase pl-3">{title}</div>
        </div>
-      </div> */}
+      </div>
 
 
 
